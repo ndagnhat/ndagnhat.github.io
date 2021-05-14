@@ -81,13 +81,16 @@
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
    */
+  let logoText = select("#logoText")
   let selectHeader = select('#header')
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
         selectHeader.classList.add('header-scrolled')
+        logoText.hidden=false;
       } else {
         selectHeader.classList.remove('header-scrolled')
+        logoText.hidden=true;
       }
     }
     window.addEventListener('load', headerScrolled)

@@ -36,9 +36,10 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Nguyễn Đăng Nhật</a></h1>
+
+      <h1 class="logo"><a href="index.html"><span id="logoText">Nguyen Dang Nhat</a></span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -47,24 +48,7 @@
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto " href="#work">Work</a></li>
           <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -78,9 +62,10 @@
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">I am Nguyen Dang Nhat</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Developer, Freelancer"></span></p>
+          <p class="display-6 color-d">Hello, world!</p>
+          <!-- <h1 class="hero-title mb-4">I am Nguyen Dang Nhat</h1> -->
+          <p class="hero-subtitle">I'm <span class="typed"
+              data-typed-items="Nguyen Dang Nhat, a Developer, a Freelancer, a Farmer"></span></p>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
       </div>
@@ -96,56 +81,91 @@
           <div class="col-sm-12">
             <div class="box-shadow-full">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                   <div class="row">
-                    <div class="col-sm-6 col-md-5">
+                    <div class="col-sm-4 col-md-5">
                       <div class="about-img">
-                        <img src="assets/img/testimonial-2.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                        <img src="assets/img/avatar.jpg" class="img-fluid rounded b-shadow-a"
+                          style="margin: 0 !important;" alt="">
                       </div>
                     </div>
-                    <div class="col-sm-6 col-md-7">
+                    <div class="col-sm-8 col-md-7">
                       <div class="about-info">
                         <p><span class="title-s">Name: </span> <span>Nguyen Dang Nhat</span></p>
                         <p><span class="title-s">Profile: </span> <span>full stack developer</span></p>
-                        <p><span class="title-s">Email: </span> <span>contact@example.com</span></p>
-                        <p><span class="title-s">Phone: </span> <span>(617) 557-0089</span></p>
+                        <p><span class="title-s">Email: </span> <span>dangnhatnguyen@outlook.com</span></p>
+                        <p><span class="title-s">Phone: </span> <span>(+84) 946 220495</span></p>
+                      </div>
+                      <div class="socials">
+                        <ul>
+                          <li><a href=""><i class="bi bi-facebook"></i></span></li>
+                          <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                          <li><a href=""><i class="bi bi-twitter"></i></a></li>
+                          <li><a href=""><i class="bi bi-linkedin"></i></a></li>
+                        </ul>
                       </div>
                     </div>
                   </div>
-                  <div class="skill-mf">
+                  
+                  
+                  <!-- <div class="skill-mf">
                     <p class="title-s">Skill</p>
                     <span>HTML</span> <span class="pull-right">85%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span>CSS3</span> <span class="pull-right">75%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span>PHP</span> <span class="pull-right">50%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                   <div class="about-me pt-4 pt-md-0">
                     <div class="title-box-2">
                       <h5 class="title-left">
                         About me
                       </h5>
                     </div>
-                    <p class="lead">
-                      Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
-                      imperdiet et, porttitor
-                      at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
-                      porttitor accumsan tincidunt.
-                    </p>
-                    <p class="lead">
+                    <ul class="lead">
+                      <li>
+                        4+ years of experiences on Web Developer with ASP.Net and Sharepoint.
+                      </li>
+                      <li>
+                        1+ years of experiences on Mobile Developer with Flutter and Android.
+                      </li>
+                      <li>
+                        10+ years of experiences on Mobile Developer with Flutter and Android.
+                      </li>
+                      <li>
+                        Hard working and high responsibility to assigned tasks. Could work overtime upon request.
+                      </li>
+                      <li>
+                        Adapt with new working styles easily.
+                      </li>
+                      <li>
+                        Ability to work as individual as well as good teamwork.
+                      </li>
+                    </ul>
+                    <div class="skill-mf">
+                      <p class="title-s">Skill</p>
+                      <p class="lead">
+                        C#, Dart, .Net, Sharepoint, Flutter, JQuery
+                      </p>
+                    </div>
+                    <!--  <p class="lead">
                       Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
                       porttitor volutpat. Vestibulum
                       ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
@@ -154,7 +174,7 @@
                       Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
                       Nulla porttitor accumsan
                       tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                    </p>
+                    </p> -->
                   </div>
                 </div>
               </div>
@@ -276,7 +296,7 @@
     </section><!-- End Services Section -->
 
     <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
+    <!-- <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
       <div class="overlay-mf"></div>
       <div class="container position-relative">
         <div class="row">
@@ -286,7 +306,8 @@
                 <span class="ico-circle"><i class="bi bi-check"></i></span>
               </div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1" class="counter purecounter"></p>
+                <p data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1"
+                  class="counter purecounter"></p>
                 <span class="counter-text">WORKS COMPLETED</span>
               </div>
             </div>
@@ -297,7 +318,8 @@
                 <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
               </div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="counter purecounter"></p>
+                <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1"
+                  class="counter purecounter"></p>
                 <span class="counter-text">YEARS OF EXPERIENCE</span>
               </div>
             </div>
@@ -308,7 +330,8 @@
                 <span class="ico-circle"><i class="bi bi-people"></i></span>
               </div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1" class="counter purecounter"></p>
+                <p data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1"
+                  class="counter purecounter"></p>
                 <span class="counter-text">TOTAL CLIENTS</span>
               </div>
             </div>
@@ -319,14 +342,16 @@
                 <span class="ico-circle"><i class="bi bi-award"></i></span>
               </div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1" class="counter purecounter"></p>
+                <p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1"
+                  class="counter purecounter"></p>
                 <span class="counter-text">AWARD WON</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div><!-- End Counter Section -->
+    </div> -->
+    <!-- End Counter Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="work" class="portfolio-mf sect-pt4 route">
@@ -495,7 +520,7 @@
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <!-- <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
       <div class="overlay-mf"></div>
       <div class="container">
         <div class="row">
@@ -517,7 +542,7 @@
                       </p>
                     </div>
                   </div>
-                </div><!-- End testimonial item -->
+                </div>
 
                 <div class="swiper-slide">
                   <div class="testimonial-box">
@@ -532,18 +557,15 @@
                       </p>
                     </div>
                   </div>
-                </div><!-- End testimonial item -->
+                </div>
               </div>
               <div class="swiper-pagination"></div>
             </div>
-
-            <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
-          
-        </div> -->
           </div>
         </div>
       </div>
-    </div><!-- End Testimonials Section -->
+    </div> -->
+    <!-- End Testimonials Section -->
 
     <!-- ======= Blog Section ======= -->
     <section id="blog" class="blog-mf sect-pt4 route">
@@ -660,90 +682,43 @@
     </section><!-- End Blog Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <!-- <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route"
+      style="background-image: url(assets/img/overlay-bg.jpg)">
       <div class="overlay-mf"></div>
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
             <div class="contact-mf">
               <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Send Message Us
-                      </h5>
-                    </div>
-                    <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
-                        Get in Touch
-                      </h5>
-                    </div>
-                    <div class="more-info">
-                      <p class="lead">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
-                        expedita aperiam aliquid at.
-                        Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
-                        mollitia inventore?
-                      </p>
-                      <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
-                        <li><span class="bi bi-phone"></span> (617) 557-0089</li>
-                        <li><span class="bi bi-envelope"></span> contact@example.com</li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-                      </ul>
-                    </div>
-                  </div>
+                <div class="title-box-2 pt-4 pt-md-0">
+                  <h5 class="title-left">
+                    Get in Touch
+                  </h5>
+                </div>
+                <div class="more-info">
+                  <p class="lead">
+                    If you wanna get in touch, talk to me about a project collaboration or just say hi, fill up the awesome form below and let's talk.
+                  </p>
+                  <ul class="list-ico">
+                    <li><span class="bi bi-phone"></span> (84) 946 220495</li>
+                    <li><span class="bi bi-envelope"></span> dangnhatnguyen@outlook.com</li>
+                  </ul>
+                </div>
+                <div class="socials">
+                  <ul>
+                    <li><a href=""><i class="bi bi-facebook"></i></span></li>
+                    <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                    <li><a href=""><i class="bi bi-twitter"></i></a></li>
+                    <li><a href=""><i class="bi bi-linkedin"></i></a></li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- End Contact Section -->
+    </section> -->
+    <!-- End Contact Section -->
 
   </main><!-- End #main -->
 
@@ -753,7 +728,6 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
             <div class="credits">
               <!--
               All the links in the footer should remain intact.
@@ -761,7 +735,7 @@
               Licensing information: https://bootstrapmade.com/license/
               Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
             -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              Handcrafted by me
             </div>
           </div>
         </div>
@@ -770,7 +744,8 @@
   </footer><!-- End  Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

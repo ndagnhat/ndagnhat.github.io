@@ -94,7 +94,7 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #0078ff;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .overlay-mf {
@@ -213,6 +213,13 @@ a:hover {
 
 .socials ul li {
   display: inline-block;
+  height: 40px;
+  width: 40px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  line-height: 1.6;
+  margin: 0 15px 0 0;
+  transition: all 500ms ease;
 }
 
 .socials .ico-circle {
@@ -1427,10 +1434,11 @@ a:hover {
 # Footer
 --------------------------------------------------------------*/
 footer {
+  margin-top: 4rem;
   text-align: center;
   color: #fff;
   padding: 25px 0;
-  background: #0062d3;
+  background: #181818;
 }
 
 footer .copyright {
