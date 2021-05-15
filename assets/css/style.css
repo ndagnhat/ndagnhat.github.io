@@ -196,6 +196,12 @@ a:hover {
   padding-left: 2rem;
 }
 
+.module-large-tile {
+  padding: 3rem 1.25rem;
+  background-color: #fff;
+  z-index: 2;
+}
+
 .box-shadow-full {
   padding: 3rem 1.25rem;
   position: relative;
@@ -207,6 +213,9 @@ a:hover {
 
 @media (min-width: 768px) {
   .box-shadow-full {
+    padding: 3rem;
+  }
+  .module-large-tile {
     padding: 3rem;
   }
 }
@@ -473,16 +482,22 @@ a:hover {
 }
 
 #header .logo a {
-  color: #fff;
+  color: #423f3f;
 }
 
 #header .logo img {
   max-height: 40px;
 }
 
-#header.header-scrolled {
-  background: rgba(0, 0, 0, 0.9);
+#header.header-scrolled1 {
+  background: rgba(0, 0, 0, 0.8);
   padding: 12px 0;
+}
+
+#header.header-scrolled {
+  background: rgba(255, 255, 255);
+  padding: 12px 0;
+  border-bottom: 1px solid #e8eaed;
 }
 
 /*--------------------------------------------------------------
@@ -524,7 +539,10 @@ a:hover {
   transition: 0.3s;
   letter-spacing: 0.4px;
   position: relative;
-  text-transform: uppercase;
+}
+
+.header-scrolled .navbar a {
+  color: #423f3f;
 }
 
 .navbar a i {
@@ -546,6 +564,15 @@ a:hover {
   transition: all 0.3s ease-in-out 0s;
 }
 
+.header-scrolled .navbar > ul > li > a:before {
+  background-color: #0078ff;
+}
+
+.navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+  visibility: visible;
+  width: 80%;
+}
+
 .navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
   visibility: visible;
   width: 80%;
@@ -553,6 +580,10 @@ a:hover {
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
   color: #fff;
+}
+
+.header-scrolled .navbar a:hover, .header-scrolled .navbar .active, .header-scrolled .navbar li:hover > a {
+  color: #000;
 }
 
 .navbar .dropdown ul {
@@ -627,6 +658,10 @@ a:hover {
   display: none;
   line-height: 0;
   transition: 0.5s;
+}
+
+.header-scrolled .mobile-nav-toggle {
+  color: #4e4e4e;
 }
 
 @media (max-width: 991px) {

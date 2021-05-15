@@ -83,13 +83,23 @@
    */
   let logoText = select("#logoText")
   let selectHeader = select('#header')
+  let navbar = select('#navbar')
   if (selectHeader) {
     const headerScrolled = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > window.innerHeight - 70) {
         selectHeader.classList.add('header-scrolled')
+        selectHeader.classList.remove('header-scrolled1')
+        navbar.classList.add('navbar-scrolled')
         logoText.hidden=false;
+      } else if (window.scrollY > 100) {
+        selectHeader.classList.add('header-scrolled1')
+        selectHeader.classList.remove('header-scrolled')
+        navbar.classList.remove('navbar-scrolled')
+        logoText.hidden=true;
       } else {
         selectHeader.classList.remove('header-scrolled')
+        selectHeader.classList.remove('header-scrolled1')
+        navbar.classList.remove('navbar-scrolled')
         logoText.hidden=true;
       }
     }
