@@ -131,6 +131,7 @@ a:hover {
 # Header
 --------------------------------------------------------------*/
 #header {
+  transition: all 0.5s;
   z-index: 997;
   padding: 12px 0;
   background: #fff;
@@ -181,7 +182,6 @@ a:hover {
 }
 
 .navbar a {
-  transition: all 0.5s;
   display: flex;
   align-items: center;
   justify-content: space-between;
