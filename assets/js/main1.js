@@ -79,6 +79,29 @@
   }
 
   /**
+   * Toggle .header-scrolled class to #header when page is scrolled
+   */
+  let logoText = select("#logoText")
+  let selectHeader = select('#header')
+  let navbar = select('#navbar')
+  if (selectHeader) {
+    const headerScrolled = () => {
+      if (window.scrollY > window.innerHeight - 70) {
+        selectHeader.classList.add('header-scrolled')
+        selectHeader.classList.remove('header-scrolled1')
+      } else if (window.scrollY > 100) {
+        selectHeader.classList.add('header-scrolled1')
+        selectHeader.classList.remove('header-scrolled')
+      } else {
+        selectHeader.classList.remove('header-scrolled')
+        selectHeader.classList.remove('header-scrolled1')
+      }
+    }
+    window.addEventListener('load', headerScrolled)
+    onscroll(document, headerScrolled)
+  }
+
+  /**
    * Back to top button
    */
   let backtotop = select('.back-to-top')
@@ -139,6 +162,64 @@
       if (select(window.location.hash)) {
         scrollto(window.location.hash)
       }
+    }
+  });
+
+  /**
+   * Intro type effect
+   */
+  const typed = select('.typed')
+  if (typed) {
+    let typed_strings = typed.getAttribute('data-typed-items')
+    typed_strings = typed_strings.split(',')
+    new Typed('.typed', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000
+    });
+  }
+
+  /**
+   * Initiate portfolio lightbox 
+   */
+  const portfolioLightbox = GLightbox({
+    selector: '.portfolio-lightbox'
+  });
+
+  /**
+   * Testimonials slider
+   */
+  new Swiper('.testimonials-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    }
+  });
+
+  /**
+   * Portfolio details slider
+   */
+  new Swiper('.portfolio-details-slider', {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
     }
   });
 
