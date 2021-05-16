@@ -600,9 +600,6 @@ a:hover {
   color: #000;
 }
 
-.nav-link:focus, .nav-link:hover {
-  color: #fff;
-}
 .header-scrolled .nav-link:focus, .nav-link:hover {
   color: #000;
 }
@@ -707,6 +704,7 @@ a:hover {
   transition: 0.3s;
   z-index: 999;
 }
+
 
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
