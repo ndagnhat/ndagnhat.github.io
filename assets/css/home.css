@@ -1,0 +1,71 @@
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.hero .hero-content {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.hero .overlay-itro {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .9;
+}
+
+.hero .hero-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+  .hero .hero-title {
+    font-size: 4.5rem;
+  }
+}
+
+.hero .hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .hero .hero-subtitle {
+    font-size: 2.5rem;
+  }
+}
+
+.hero .text-slider-items {
+  display: none;
+}
+
+.hero-single {
+  height: 350px;
+}
+
+.bg-image {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 1024px) {
+  .bg-image {
+    background-attachment: scroll;
+  }
+}
