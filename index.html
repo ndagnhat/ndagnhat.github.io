@@ -148,67 +148,11 @@ url: "/"
             backSpeed: 50,
             backDelay: 2000
         });
-
-        if (window.location.hash != null && window.location.hash != "") {
-            scrolltoSection(window.location.hash);
-        }
-
-        navbarlinksActive();
         headerScrolled();
     });
 
-    function navbarlinksActive() {
-        let homeLinkActive = true;
-        let position = window.scrollY + 200
-        $("#navbar .homescrollto").each(function (index) {
-            let hash = $(this).prop("hash");
-            if (hash != null && hash != "") {
-                let section = $(hash);
-                if (section.length > 0) {
-                    if (position >= section.offset().top && position <= (section.offset().top + section.outerHeight())) {
-                        homeLinkActive = false;
-                        $(this).addClass('active')
-                    } else {
-                        $(this).removeClass('active')
-                    }
-                }
-            }
-        });
-        if (homeLinkActive) {
-            $($("#navbar .homescrollto")[0]).addClass('active');
-        } else {
-            $($("#navbar .homescrollto")[0]).removeClass('active');
-        }
-    }
     $(document).scroll(function () {
-        navbarlinksActive();
         headerScrolled();
-    });
-
-    function scrolltoSection(sectionId) {
-        let offset = $("#header").outerHeight();
-        let section = $(sectionId);
-        if (section.length > 0) {
-            let elementPos = section.offset().top;
-            window.scrollTo({
-                top: elementPos - offset,
-                behavior: 'smooth'
-            });
-        } else {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-    }
-    $('.homescrollto').click(function (event) {
-        event.preventDefault();
-        if ($('#navbar').hasClass('navbar-mobile')) {
-            $('#navbar').removeClass('navbar-mobile')
-            $('.mobile-nav-toggle').toggleClass('bi-list')
-            $('.mobile-nav-toggle').toggleClass('bi-x')
-        }
-        scrolltoSection($(this).prop("hash"));
     });
 
     function headerScrolled() {
