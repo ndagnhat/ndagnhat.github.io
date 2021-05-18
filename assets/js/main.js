@@ -71,7 +71,7 @@ $(document).ready(function () {
   $("#navbar .nav-link").each(function (index) {
     let pathname = $(this).prop("pathname");
     if (pathname == currentPathname) {
-      if ($(this).hasClass(".homescrollto")) {
+      if ($(this).hasClass("homescrollto")) {
         isScrollNavbar = true;
       } else {
         $(this).addClass('active');
