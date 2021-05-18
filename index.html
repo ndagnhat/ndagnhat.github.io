@@ -208,11 +208,11 @@ url: "/"
             $('.mobile-nav-toggle').toggleClass('bi-list')
             $('.mobile-nav-toggle').toggleClass('bi-x')
         }
-        scrolltoSection(hash);
+        scrolltoSection($(this).prop("hash"));
     });
 
     function headerScrolled() {
-        if (window.scrollY > window.innerHeight - 70) {
+        if (window.scrollY > window.innerHeight - $("#header").outerHeight()) {
             $("#header").removeClass('header-hero-scrolled')
             $("#header").removeClass('header-no-scrolled')
         } else if (window.scrollY > 100) {
