@@ -1,0 +1,23 @@
+---
+layout: default
+title: "My Stories"
+summary: "My Stories"
+permalink: "/stories/"
+thumbnail: "/assets/img/thumbnail.jpg"
+---
+<div class="container" style="padding-top: 70px;">
+    <!-- title -->
+    <div class="text-center p-5">
+        <h1>My Stories</h1>
+        <p>Helpful products. For everyone.</p>
+    </div>
+
+    <ul>
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            {{ post.excerpt }}
+          </li>
+        {% endfor %}
+      </ul>
+</div>
