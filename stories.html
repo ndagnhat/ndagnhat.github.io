@@ -17,8 +17,8 @@ thumbnail: "/assets/img/thumbnail.jpg"
     <div class="row">
         {% for post in site.posts reversed %}
             <div class="col-sm-6 col-lg-4 pb-5 p-3 p-sm-5">
-                <a href="{{ post.url }}">{{ post.title }}</a>
-                <p>{{ post.date.strftime("%Y-%m-%d") }}</p>
+                <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                <p>{{ post.date }}</p>
                 {% if post.title_photo %}
                 <img src="{{ post.title_photo }}" alt="test" class="rounded-2" width="100%" />
                 {% endif %}
