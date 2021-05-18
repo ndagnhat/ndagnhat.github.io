@@ -68,7 +68,7 @@ $(document).ready(function () {
 
   let currentPathname = window.location.pathname;
   var isScrollNavbar = false;
-  $("#navbar").each(function (index) {
+  $("#navbar .nav-link").each(function (index) {
     let pathname = $(this).prop("pathname");
     if (pathname == currentPathname) {
       if ($(this).hasClass(".homescrollto")) {
