@@ -15,3 +15,10 @@ share:
 #thumbnail:
 #categories:
 #tags
+
+
+# Edit Author details
+author_logo: /assets/img/profile.jpg
+author_name: Nguyen Dang Nhat
+author_bio: Hi, my name is John Doe. I built this site using devlopr-jekyll :D
+author_email: "dangnhatnguyen@outlook.com"
