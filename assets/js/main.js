@@ -11,9 +11,10 @@ function changeNavbarlinksActiveScroll() {
   var rootHash;
   var hasActive = false;
   $("#navbar .homescrollto").each(function (index) {
-    let navbarlink = $(this).get();
-    if (navbarlink.pathname == currentPathname) {
-      if (navbarlink.hash != null && navbarlink.hash != "") {
+    let pathname = $(this).prop("pathname");
+    if (pathname == currentPathname) {
+      var hash = $(this).prop("hash");
+      if (hash != null && hash != "") {
         let section = $(hash);
         if (section.length > 0) {
           if (position >= section.offset().top && position <= (section.offset().top + section.outerHeight())) {
@@ -68,7 +69,7 @@ $(document).ready(function () {
   let currentPathname = window.location.pathname;
   var isScrollNavbar = false;
   $("#navbar").each(function (index) {
-    let pathname = $(this).get().pathname;
+    let pathname = $(this).prop("pathname");
     if (pathname == currentPathname) {
       if ($(this).hasClass(".homescrollto")) {
         isScrollNavbar = true;
