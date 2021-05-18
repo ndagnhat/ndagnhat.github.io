@@ -9,7 +9,7 @@
     {% else %}
     <meta name="description" content="{{ site.description }}"/>
     {% endif %} 
-    <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }}, {{ page.keywords | escape }}" />
+    <meta name="keywords" content="{% if page.title %}{{ page.title }}, {% endif %}{{ site.title }}, {{ page.keywords | escape }}" />
     {% if page.noindex %}
     <meta name="robots" content="noindex" />
     {% endif %}
