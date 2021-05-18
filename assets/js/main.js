@@ -30,10 +30,10 @@ function changeNavbarlinksActiveScroll() {
       } else {
         rootHash = this;
       }
-    } 
+    }
   });
-  if(rootHash != null) {
-    if(hasActive) {
+  if (rootHash != null) {
+    if (hasActive) {
       $(rootHash).removeClass('active');
     } else {
       $(rootHash).addClass('active');
@@ -45,16 +45,16 @@ function scrolltoSection(sectionId) {
   let offset = $("#header").outerHeight();
   let section = $(sectionId);
   if (section.length > 0) {
-      let elementPos = section.offset().top;
-      window.scrollTo({
-          top: elementPos - offset,
-          behavior: 'smooth'
-      });
+    let elementPos = section.offset().top;
+    window.scrollTo({
+      top: elementPos - offset,
+      behavior: 'smooth'
+    });
   } else {
-      window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-      });
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   }
 }
 
@@ -67,36 +67,44 @@ $(document).ready(function () {
     $(this).toggleClass("bi-x");
   });
 
-  let currentPathname = window.location.pathname;
-  var isScrollNavbar = false;
-  $("#navbar .nav-link").each(function (index) {
-    let pathname = $(this).prop("pathname");
-    if (pathname == currentPathname) {
-      if ($(this).hasClass("homescrollto")) {
-        isScrollNavbar = true;
-      } else {
-        $(this).addClass('active');
-      }
-    }
-  });
-  if(isScrollNavbar) {
-    changeNavbarlinksActiveScroll();
-    $(document).scroll(function () {
-      changeNavbarlinksActiveScroll();
-    });
 
-    if (window.location.hash != null && window.location.hash != "") {
-      scrolltoSection(window.location.hash);
-    }
-    $('.homescrollto').click(function (event) {
+  if (currentMenu) {
+    let currentPathname = window.location.pathname;
+    var isScrollNavbar = false;
+    $("#navbar .nav-link").each(function (index) {
+      let pathname = $(this).prop("pathname");
+      if (currentMenu) {
+        if ("/" + currentMenu == currentPathname) {
+          $(this).addClass('active');
+        }
+      } else if (pathname == currentPathname) {
+        
+        if ($(this).hasClass("homescrollto")) {
+          isScrollNavbar = true;
+        } else {
+          $(this).addClass('active');
+        }
+      }
+    });
+    if (isScrollNavbar) {
+      changeNavbarlinksActiveScroll();
+      $(document).scroll(function () {
+        changeNavbarlinksActiveScroll();
+      });
+
+      if (window.location.hash != null && window.location.hash != "") {
+        scrolltoSection(window.location.hash);
+      }
+      $('.homescrollto').click(function (event) {
         event.preventDefault();
         if ($('#navbar').hasClass('navbar-mobile')) {
-            $('#navbar').removeClass('navbar-mobile')
-            $('.mobile-nav-toggle').toggleClass('bi-list')
-            $('.mobile-nav-toggle').toggleClass('bi-x')
+          $('#navbar').removeClass('navbar-mobile')
+          $('.mobile-nav-toggle').toggleClass('bi-list')
+          $('.mobile-nav-toggle').toggleClass('bi-x')
         }
         scrolltoSection($(this).prop("hash"));
-    });
+      });
+    }
   }
 });
 
