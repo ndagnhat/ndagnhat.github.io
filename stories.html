@@ -11,13 +11,16 @@ thumbnail: "/assets/img/thumbnail.jpg"
         <h1>My Stories</h1>
         <p>Helpful products. For everyone.</p>
     </div>
-
-    <ul>
-        {% for post in site.posts %}
-          <li>
+    <div class="row">
+        {% for post in site.posts reversed %}
+            <div class="col-sm-6">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </div>
             <a href="{{ post.url }}">{{ post.title }}</a>
-            {{ post.excerpt }}
-          </li>
+            <p>{{ post.excerpt }}</p>
+            {% if post.title_photo %}
+            <img src="{{ post.title_photo }}" alt="test" class="rounded-2" width="100%" />
+            {% endif %}
         {% endfor %}
-      </ul>
+    </div>
 </div>
