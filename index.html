@@ -26,34 +26,32 @@ url: "/"
 <section id="about">
     <div class="container">
         <!--About-->
-        <div class="module-large-tile rounded-2 mt-3 mt-sm-5">
+        <div class="pt-3 pt-sm-5">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="row">
                         <div class="col-sm-4 col-md-5">
                             <div class="about-img d-none d-sm-block">
-                                <img src="assets/img/profile.jpg" class="img-fluid rounded b-shadow-a"
+                                <img src="{{site.author.photo}}" class="img-fluid rounded b-shadow-a"
                                     style="margin: 0 !important;" alt="">
                             </div>
                         </div>
                         <div class="col-sm-8 col-md-7">
                             <div class="about-info">
-                                <p><span class="title-s">Name: </span> <span>Nguyen Dang Nhat</span></p>
-                                <p><span class="title-s">Profile: </span> <span>Web and Mobile developer</span></p>
-                                <p><span class="title-s">Email: </span> <span>dangnhatnguyen@outlook.com</span></p>
-                                <p><span class="title-s">Phone: </span> <span>(+84) 946 220495</span></p>
+                                <p><b class="title-s">Name: </b><span>{{site.author.name}}</span></p>
+                                <p><b class="title-s">Profile: </b><span>Web and Mobile developer</span></p>
+                                <p><b class="title-s">Email: </b><span>{{site.author.email}}</span></p>
+                                <p><b class="title-s">Phone: </b><span>{{site.author.phone}}</span></p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="about-me pt-4 pt-md-0">
-                        <div class="title-box-2">
-                            <h5 class="title-left">
-                                About me
-                            </h5>
+                    <div class="pt-4 pt-md-0">
+                        <div>
+                            <h5>About me</h5>
                         </div>
-                        <ul class="about-text">
+                        <ul>
                             <li>
                                 Web developer with 4+ years of experience in Microsoft .NET technologies
                             </li>
@@ -64,14 +62,12 @@ url: "/"
                                 A farmer with 10 year of experience...
                             </li>
                         </ul>
-                        <div class="skill-mf">
-                            <p class="title-s">Skill</p>
-                            <p class="about-text">
-                                💪 C#, Dart, .Net, Sharepoint, Flutter, JQuery
-                            </p>
+                        <div>
+                            <h5>Skill</h5>
+                            <p>💪 C#, Dart, .Net, Sharepoint, Flutter, JQuery</p>
                         </div>
                         <div class="skill-mf">
-                            <a class="btn btn-primary" href="assets/cv/NguyenDangNhat.pdf">Download my CV</a>
+                            <a class="btn btn-primary" href="{{site.author.cv}}">Download my CV</a>
                         </div>
                     </div>
                 </div>
