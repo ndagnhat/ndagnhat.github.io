@@ -194,19 +194,21 @@ url: "/"
                 top: elementPos - offset,
                 behavior: 'smooth'
             });
+        } else {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         }
     }
     $('.homescrollto').click(function (event) {
-        var hash = $(this).prop("hash");
-        if (hash != null && hash != "") {
-            event.preventDefault()
-            if ($('#navbar').hasClass('navbar-mobile')) {
-                $('#navbar').removeClass('navbar-mobile')
-                $('.mobile-nav-toggle').toggleClass('bi-list')
-                $('.mobile-nav-toggle').toggleClass('bi-x')
-            }
-            scrolltoSection(hash);
+        event.preventDefault();
+        if ($('#navbar').hasClass('navbar-mobile')) {
+            $('#navbar').removeClass('navbar-mobile')
+            $('.mobile-nav-toggle').toggleClass('bi-list')
+            $('.mobile-nav-toggle').toggleClass('bi-x')
         }
+        scrolltoSection(hash);
     });
 
     function headerScrolled() {
