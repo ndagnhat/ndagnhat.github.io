@@ -71,7 +71,7 @@ $(document).ready(function () {
   var isScrollNavbar = false;
   $("#navbar .nav-link").each(function (index) {
     let pathname = $(this).prop("pathname");
-    if (currentMenu != null && currentMenu != "") {
+    if (typeof currentMenu != "undefined") {
       if (currentMenu == pathname) {
         $(this).addClass('active');
       }
