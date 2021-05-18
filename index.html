@@ -212,7 +212,7 @@ url: "/"
     });
 
     function headerScrolled() {
-        if (window.scrollY > window.innerHeight - $("#header").outerHeight()) {
+        if (window.scrollY > window.innerHeight - $("#header").outerHeight() - 1) {
             $("#header").removeClass('header-hero-scrolled')
             $("#header").removeClass('header-no-scrolled')
         } else if (window.scrollY > 100) {
