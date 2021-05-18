@@ -10,6 +10,7 @@ function changeNavbarlinksActiveScroll() {
   let currentPathname = window.location.pathname;
   var rootHash;
   var hasActive = false;
+  let position = window.scrollY + 200
   $("#navbar .homescrollto").each(function (index) {
     let pathname = $(this).prop("pathname");
     if (pathname == currentPathname) {
