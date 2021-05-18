@@ -71,8 +71,8 @@ $(document).ready(function () {
   var isScrollNavbar = false;
   $("#navbar .nav-link").each(function (index) {
     let pathname = $(this).prop("pathname");
-    if (currentMenu) {
-      if (currentMenu == currentPathname) {
+    if (currentMenu != null && currentMenu != "") {
+      if (currentMenu == pathname) {
         $(this).addClass('active');
       }
     } else if (pathname == currentPathname) {
