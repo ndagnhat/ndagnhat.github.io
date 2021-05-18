@@ -199,12 +199,14 @@
                     backDelay: 2000
                 });
 
+            });
+
+            $(window).on('load', function () {
+                navbarlinksActive();
+                headerScrolled();
                 if (window.location.hash != null && window.location.hash != "") {
                     scrolltoSection(window.location.hash);
                 }
-                
-                navbarlinksActive();
-                headerScrolled();
             });
 
             function navbarlinksActive() {
@@ -234,6 +236,7 @@
                 navbarlinksActive();
                 headerScrolled();
             });
+
 
             function scrolltoSection(sectionId) {
                 let offset = $("#header").outerHeight();
