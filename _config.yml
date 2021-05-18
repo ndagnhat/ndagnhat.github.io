@@ -19,7 +19,7 @@ share:
 
 # Edit Author details
 author:
-  logo: /assets/img/profile.jpg
+  photo: /assets/img/profile.jpg
   name: Nguyen Dang Nhat
   bio: Hi, my name is John Doe. I built this site using devlopr-jekyll :D
   email: "dangnhatnguyen@outlook.com"
