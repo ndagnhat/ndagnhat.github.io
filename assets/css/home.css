@@ -106,5 +106,9 @@
 }
 
 #header.header-hero-scrolled .mobile-nav-toggle, #header.header-no-scrolled .mobile-nav-toggle {
-  color: #4e4e4e !important;
+  color: #fff !important;
+}
+
+#header.header-hero-scrolled .navbar-mobile ul {
+  background-color: rgba(0, 0, 0, 0.9) !important;
 }
