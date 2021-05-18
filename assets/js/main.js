@@ -67,44 +67,41 @@ $(document).ready(function () {
     $(this).toggleClass("bi-x");
   });
 
-
-  if (currentMenu) {
-    let currentPathname = window.location.pathname;
-    var isScrollNavbar = false;
-    $("#navbar .nav-link").each(function (index) {
-      let pathname = $(this).prop("pathname");
-      if (currentMenu) {
-        if ("/" + currentMenu == currentPathname) {
-          $(this).addClass('active');
-        }
-      } else if (pathname == currentPathname) {
-        
-        if ($(this).hasClass("homescrollto")) {
-          isScrollNavbar = true;
-        } else {
-          $(this).addClass('active');
-        }
+  let currentPathname = window.location.pathname;
+  var isScrollNavbar = false;
+  $("#navbar .nav-link").each(function (index) {
+    let pathname = $(this).prop("pathname");
+    if (currentMenu) {
+      if (currentMenu == currentPathname) {
+        $(this).addClass('active');
       }
-    });
-    if (isScrollNavbar) {
-      changeNavbarlinksActiveScroll();
-      $(document).scroll(function () {
-        changeNavbarlinksActiveScroll();
-      });
+    } else if (pathname == currentPathname) {
 
-      if (window.location.hash != null && window.location.hash != "") {
-        scrolltoSection(window.location.hash);
+      if ($(this).hasClass("homescrollto")) {
+        isScrollNavbar = true;
+      } else {
+        $(this).addClass('active');
       }
-      $('.homescrollto').click(function (event) {
-        event.preventDefault();
-        if ($('#navbar').hasClass('navbar-mobile')) {
-          $('#navbar').removeClass('navbar-mobile')
-          $('.mobile-nav-toggle').toggleClass('bi-list')
-          $('.mobile-nav-toggle').toggleClass('bi-x')
-        }
-        scrolltoSection($(this).prop("hash"));
-      });
     }
+  });
+  if (isScrollNavbar) {
+    changeNavbarlinksActiveScroll();
+    $(document).scroll(function () {
+      changeNavbarlinksActiveScroll();
+    });
+
+    if (window.location.hash != null && window.location.hash != "") {
+      scrolltoSection(window.location.hash);
+    }
+    $('.homescrollto').click(function (event) {
+      event.preventDefault();
+      if ($('#navbar').hasClass('navbar-mobile')) {
+        $('#navbar').removeClass('navbar-mobile')
+        $('.mobile-nav-toggle').toggleClass('bi-list')
+        $('.mobile-nav-toggle').toggleClass('bi-x')
+      }
+      scrolltoSection($(this).prop("hash"));
+    });
   }
 });
 
