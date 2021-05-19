@@ -296,6 +296,10 @@ a:hover {
   transition: 0.5s;
 }
 
+.mobile-nav-toggle .bi-x {
+  color: #fff !important;
+}
+
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
