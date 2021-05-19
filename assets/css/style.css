@@ -296,7 +296,7 @@ a:hover {
   transition: 0.5s;
 }
 
-.mobile-nav-toggle .bi-x {
+.navbar-mobile .bi-x {
   color: #fff !important;
 }
 
