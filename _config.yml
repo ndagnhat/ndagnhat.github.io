@@ -35,12 +35,12 @@ products:
   items: 
     - name: Money Daily
       description: Experience a fresh way to manage money.
-      photo: /assets/img/products/sp1.jpg
+      photo: /assets/img/products/sp1.png
       url: /products
       
     - name: Gospel Daily
       description: Helpful products. For everyone.
-      photo: /assets/img/products/sp2.jpg
+      photo: /assets/img/products/sp2.png
       url: /products
 
 hireme:
