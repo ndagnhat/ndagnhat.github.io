@@ -32,6 +32,16 @@ products:
   title: My Products
   description: Helpful products. For everyone.
   thumbnail: /assets/img/products/products.jpg
+  items: 
+    - name: Money Daily
+      description: Experience a fresh way to manage money.
+      photo: /assets/img/products/sp1.jpg
+      url: /products
+      
+    - name: Gospel Daily
+      description: Helpful products. For everyone.
+      photo: /assets/img/products/sp2.jpg
+      url: /products
 
 hireme:
   title: Hire me!
