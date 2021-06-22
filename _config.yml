@@ -17,15 +17,19 @@ url: "https://ngdangnhat.github.io"
 memuitems:
   - name: Home
     url: "/"
+    id: home
   
   - name: Products
     url: "/products"
+    id: products
     
   - name: Stories
     url: "/stories"
+    id: stories
     
   - name: Hire me!
     url: "/hireme"
+    id: hireme
   
 
 #abount me config

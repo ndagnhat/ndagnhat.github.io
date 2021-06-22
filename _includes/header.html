@@ -4,7 +4,7 @@
         <nav id="navbar" class="navbar">
             <ul>
                 {% if site.memuitems %} {% for item in site.memuitems %}
-                <li><a class="nav-link" href="{{item.url}}">{{item.name}}</a></li>
+                <li><a class="nav-link" id="{{item.id}}" href="{{item.url}}">{{item.name}}</a></li>
                 {% endfor %} {% endif %}
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
@@ -13,12 +13,6 @@
 </header>
 {% if page.menu %}
 <script>
-    let currentMenu = "/{{page.menu}}";
-    $("#navbar .nav-link").each(function (index) {
-        let pathname = $(this).prop("pathname");
-        if (currentMenu == pathname) {
-            $(this).addClass('active');
-        }
-    });
+    $("#{{page.menu}}").addClass('active');
 </script>
 {% endif %}
