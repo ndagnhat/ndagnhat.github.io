@@ -12,3 +12,16 @@ url: "https://ngdangnhat.github.io"
 # thumbnail:
 # categories:
 # tags
+
+#abount me config
+aboutme:
+  photo: /assets/img/profile.jpg
+  name: Nguyen Dang Nhat
+  email: "dangnhatnguyen@outlook.com"
+  phone: "(+84) 946 220495"
+  cv: "/assets/cv/NguyenDangNhat.pdf"
+  abouts: 
+    - Web developer with 4+ years of experience in Microsoft .NET technologies
+    - Mobile developer with 1+ years of experience in Flutter
+  skills: 
+    - "💪 .Net, Sharepoint, Flutter, JQuery"
