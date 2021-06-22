@@ -42,6 +42,11 @@ products:
       description: Helpful products. For everyone.
       photo: /assets/img/products/sp2.png
       url: /products
+      
+    - name: Gospel Daily
+      description: Helpful products. For everyone.
+      photo: /assets/img/products/sp2.png
+      url: /products
 
 hireme:
   title: Hire me!
