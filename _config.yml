@@ -12,6 +12,7 @@ url: "https://ngdangnhat.github.io"
 # thumbnail:
 # categories:
 # tags
+# menu
 
 #menu config
 memuitems:
@@ -44,7 +45,7 @@ aboutme:
     - Web developer with 4+ years of experience in Microsoft .NET technologies
     - Mobile developer with 1+ years of experience in Flutter
   skills: 
-    - "💪 .Net, Sharepoint, Flutter, JQuery"
+    - "💪 ASP.Net, Sharepoint, Flutter"
 
 #product config
 products:
