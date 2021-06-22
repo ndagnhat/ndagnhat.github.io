@@ -14,7 +14,7 @@ url: "https://ngdangnhat.github.io"
 # tags
 
 #menu config
-memus:
+memuitems:
   - name: Home
     url: "/"
   

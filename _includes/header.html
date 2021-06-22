@@ -3,7 +3,7 @@
         <h1 class="logo"><a href="/">{{site.aboutme.name}}</a></h1>
         <nav id="navbar" class="navbar">
             <ul>
-                {% if site.menus %} {% for item in site.menus %}
+                {% if site.memuitems %} {% for item in site.memuitems %}
                 <li><a class="nav-link" href="{{item.url}}">{{item.name}}</a></li>
                 {% endfor %} {% endif %}
             </ul>
