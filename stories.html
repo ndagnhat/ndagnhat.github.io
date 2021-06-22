@@ -20,7 +20,7 @@ thumbnail: "/assets/img/stories/stories.jpg"
                 <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
                 <p>{{ post.date | date_to_long_string }}</p>
                 {% if post.title_photo %}
-                <a href="{{ post.url }}"></a><img src="{{ post.title_photo }}" alt="test" class="rounded-2" width="100%" /></a>
+                <a href="{{ post.url }}"><img src="{{ post.title_photo }}" alt="test" class="rounded-2" width="100%" /></a>
                 {% endif %}
             </div>
         {% endfor %}
