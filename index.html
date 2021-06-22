@@ -38,7 +38,7 @@ categories:
                         <div class="col-sm-4 col-md-5">
                             <div class="about-img d-none d-sm-block">
                                 <img src="{{site.aboutme.photo}}" class="img-fluid rounded b-shadow-a"
-                                    style="margin: 0 !important;" alt="">
+                                    style="margin: 0 !important;" alt="avatar">
                             </div>
                         </div>
                         <div class="col-sm-8 col-md-7">
@@ -77,53 +77,51 @@ categories:
         </div>
         <!--Products-->
         <div class="position-relative mt-5">
-            <img src="{{site.productpage.thumbnail}}" alt="test" class="rounded-2" width="100%" />
+            <img src="{{site.products.thumbnail}}" alt="product thumbnail" class="rounded-2" width="100%" />
             <div class="position-absolute top-50 start-0 translate-middle-y ms-3 ms-sm-5 d-none d-lg-block"
                 style="width: 100%;">
                 <div class="row">
                     <div class="col-sm-5">
-                        <h4>{{site.productpage.title}}</h4>
-                        <p style="font-size: 1.5rem;">{{site.productpage.description}}</p>
+                        <h4>{{site.products.title}}</h4>
+                        <p style="font-size: 1.5rem;">{{site.products.description}}</p>
                         <a href="/products" class="color-a">Explore all products</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="text-center d-lg-none pt-2">
-            <h4>{{site.productpage.name}}</h4>
-            <p style="font-size: 1.2rem;">{{site.productpage.description}}</p>
+            <h4>{{site.products.title}}</h4>
+            <p style="font-size: 1.2rem;">{{site.products.description}}</p>
             <a href="/products" class="color-a">Explore all products</a>
         </div>
-        <!--Services-->
+        <!--Hire me-->
         <div class="position-relative mt-5">
-            <img src="assets/img/services.png" alt="test" class="rounded-2" width="100%" />
+            <img src="{{site.hireme.thumbnail}}" alt="hire me thumbnail" class="rounded-2" width="100%" />
             <div class="position-absolute top-50 start-0 translate-middle-y ms-3 ms-sm-5 d-none d-lg-block"
                 style="width: 100%;">
                 <div class="row">
                     <div class="col-sm-5">
-                        <h4>Hire me!</h4>
-                        <p style="font-size: 1.5rem;">I'm Available For Freelance Work.</p>
+                        <h4>{{site.hireme.title}}</h4>
+                        <p style="font-size: 1.5rem;">{{site.hireme.description}}</p>
                         <a href="/services" class="color-a">Get in Touch</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="text-center d-lg-none pt-2">
-            <h4>Here me!</h4>
-            <p style="font-size: 1.2rem;">I'm Available For Freelance Work.</p>
+            <h4>{{site.hireme.title}}</h4>
+            <p style="font-size: 1.2rem;">{{site.hireme.description}}</p>
             <a href="/services" class="color-a">Get in Touch</a>
         </div>
         <!--stories-->
         <div class="position-relative mt-5 mb-lg-5">
-            <img src="assets/img/stories.jpg" alt="test" class="rounded-2" width="100%" />
+            <img src="{{site.stories.thumbnail}}" alt="stories thumbnail" class="rounded-2" width="100%" />
             <div class="position-absolute top-50 start-0 translate-middle-y ms-3 ms-sm-5 d-none d-lg-block"
                 style="width: 100%;">
                 <div class="row">
                     <div class="col-sm-5">
-                        <h4 style="color: #fff;">My Stories</h4>
-                        <p style="font-size: 1.5rem; color: #fff;">The best part about technology is seeing what the
-                            world does
-                            with it.</p>
+                        <h4 style="color: #fff;">{{site.stories.title}}</h4>
+                        <p style="font-size: 1.5rem; color: #fff;">{{site.stories.description}}</p>
                         <a href="/stories" class="btn btn-primary">Explore my stories</a>
                     </div>
                 </div>
@@ -131,8 +129,8 @@ categories:
         </div>
         <div class="d-lg-none pt-2 mb-5">
             <div class="text-center ">
-                <h4>My Stories</h4>
-                <p style="font-size: 1.2rem;">The best part about technology is seeing what the world does with it.</p>
+                <h4>{{site.stories.title}}</h4>
+                <p style="font-size: 1.2rem;">{{site.stories.description}}</p>
                 <a href="/stories" class="color-a">Explore my stories</a>
             </div>
         </div>

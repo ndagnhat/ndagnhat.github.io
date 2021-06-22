@@ -28,7 +28,17 @@ aboutme:
   skills: 
     - "💪 .Net, Sharepoint, Flutter, JQuery"
 
-productpage:
+products:
   title: My Products
   description: Helpful products. For everyone.
   thumbnail: /assets/img/products/products.jpg
+
+hireme:
+  title: Hire me!
+  description: I'm Available For Freelance Work.
+  thumbnail: /assets/img/here_me/here_me.jpg
+
+stories:
+  title: My Stories
+  description: The best part about technology is seeing what the world does with it.
+  thumbnail: /assets/img/stories/stories.jpg
