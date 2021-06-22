@@ -57,7 +57,7 @@ categories:
                         </div>
                         <ul>
                             {% if site.aboutme.abouts %} {% for about in site.aboutme.abouts %}
-                            <li>{% about %}</li>
+                            <li>{{ about }}</li>
                             {% endfor %} {% endif %} 
                         </ul>
                         <div>
@@ -65,7 +65,7 @@ categories:
                         </div>
                         <ul>
                             {% if site.aboutme.skills %} {% for skill in site.aboutme.skills %}
-                            <li>{% skill %}</li>
+                            <li>{{ skill }}</li>
                             {% endfor %} {% endif %} 
                         </ul>
                         <div>
