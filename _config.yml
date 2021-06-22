@@ -13,6 +13,20 @@ url: "https://ngdangnhat.github.io"
 # categories:
 # tags
 
+#menu config
+memus:
+  - name: Home
+    url: "/"
+  
+  - name: Products
+    url: "/products"
+    
+  - name: Stories
+    url: "/stories"
+    
+  - name: Hire me!
+    url: "/hireme"
+  
 
 #abount me config
 aboutme:
@@ -28,6 +42,7 @@ aboutme:
   skills: 
     - "💪 .Net, Sharepoint, Flutter, JQuery"
 
+#product config
 products:
   title: My Products
   description: Helpful products. For everyone.
@@ -42,17 +57,19 @@ products:
       description: Helpful products. For everyone.
       photo: /assets/img/products/sp2.png
       url: /products
-      
+
     - name: Gospel Daily
       description: Helpful products. For everyone.
       photo: /assets/img/products/sp2.png
       url: /products
 
+#hire me config
 hireme:
   title: Hire me!
   description: I'm Available For Freelance Work.
   thumbnail: /assets/img/here_me/here_me.png
 
+#store config
 stories:
   title: My Stories
   description: The best part about technology is seeing what the world does with it.
