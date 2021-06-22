@@ -11,3 +11,14 @@
         </nav>
     </div>
 </header>
+{% if page.menu %}
+<script>
+    let currentMenu = "/{{page.menu}}";
+    $("#navbar .nav-link").each(function (index) {
+        let pathname = $(this).prop("pathname");
+        if (currentMenu == pathname) {
+            $(this).addClass('active');
+        }
+    });
+</script>
+{% endif %}
