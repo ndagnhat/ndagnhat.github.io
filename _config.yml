@@ -26,3 +26,8 @@ aboutme:
     - Mobile developer with 1+ years of experience in Flutter
   skills: 
     - "💪 .Net, Sharepoint, Flutter, JQuery"
+
+productpage:
+  title: My Products
+  description: Helpful products. For everyone.
+  thumbnail: /assets/img/products/products.jpg

@@ -77,21 +77,21 @@ categories:
         </div>
         <!--Products-->
         <div class="position-relative mt-5">
-            <img src="assets/img/products.jpg" alt="test" class="rounded-2" width="100%" />
+            <img src="{{site.productpage.thumbnail}}" alt="test" class="rounded-2" width="100%" />
             <div class="position-absolute top-50 start-0 translate-middle-y ms-3 ms-sm-5 d-none d-lg-block"
                 style="width: 100%;">
                 <div class="row">
                     <div class="col-sm-5">
-                        <h4>My Products</h4>
-                        <p style="font-size: 1.5rem;">Helpful products. For everyone.</p>
+                        <h4>{{site.productpage.name}}</h4>
+                        <p style="font-size: 1.5rem;">{{site.productpage.description}}</p>
                         <a href="/products" class="color-a">Explore all products</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="text-center d-lg-none pt-2">
-            <h4>My Products</h4>
-            <p style="font-size: 1.2rem;">Helpful products. For everyone.</p>
+            <h4>{{site.productpage.name}}</h4>
+            <p style="font-size: 1.2rem;">{{site.productpage.description}}</p>
             <a href="/products" class="color-a">Explore all products</a>
         </div>
         <!--Services-->
