@@ -58,13 +58,8 @@ products:
       photo: /assets/img/products/sp1.png
       url: /products
       
-    - name: Gospel Daily
-      description: Helpful products. For everyone.
-      photo: /assets/img/products/sp2.png
-      url: /products
-
-    - name: Gospel Daily
-      description: Helpful products. For everyone.
+    - name: Amem - Gospel and catholic calendar
+      description: For Christian. Read Gospel daily.
       photo: /assets/img/products/sp2.png
       url: /products
 
