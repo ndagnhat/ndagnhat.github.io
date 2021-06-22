@@ -37,16 +37,15 @@ categories:
                     <div class="row">
                         <div class="col-sm-4 col-md-5">
                             <div class="about-img d-none d-sm-block">
-                                <img src="{{site.author.photo}}" class="img-fluid rounded b-shadow-a"
+                                <img src="{{site.aboutme.photo}}" class="img-fluid rounded b-shadow-a"
                                     style="margin: 0 !important;" alt="">
                             </div>
                         </div>
                         <div class="col-sm-8 col-md-7">
                             <div class="about-info">
-                                <p><b class="title-s">Name: </b><span>{{site.author.name}}</span></p>
-                                <p><b class="title-s">Profile: </b><span>Web and Mobile developer</span></p>
-                                <p><b class="title-s">Email: </b><span>{{site.author.email}}</span></p>
-                                <p><b class="title-s">Phone: </b><span>{{site.author.phone}}</span></p>
+                                <p><b class="title-s">Name: </b><span>{{site.aboutme.name}}</span></p>
+                                <p><b class="title-s">Email: </b><span>{{site.aboutme.email}}</span></p>
+                                <p><b class="title-s">Phone: </b><span>{{site.aboutme.phone}}</span></p>
                             </div>
                         </div>
                     </div>
@@ -57,21 +56,19 @@ categories:
                             <h5>About me</h5>
                         </div>
                         <ul>
-                            <li>
-                                Web developer with 4+ years of experience in Microsoft .NET technologies
-                            </li>
-                            <li>
-                                Mobile developer with 1+ years of experience in Flutter
-                            </li>
-                            <li>
-                                A farmer with 10 year of experience...
-                            </li>
+                            {% if site.aboutme.abouts %} {% for about in site.aboutme.abouts %}
+                            <li>about</li>
+                            {% endfor %} {% endif %} 
                         </ul>
                         <div>
                             <h5>Skill</h5>
-                            <p>💪 C#, Dart, .Net, Sharepoint, Flutter, JQuery</p>
                         </div>
-                        <div class="skill-mf">
+                        <ul>
+                            {% if site.aboutme.skills %} {% for skill in site.aboutme.skills %}
+                            <li>skill</li>
+                            {% endfor %} {% endif %} 
+                        </ul>
+                        <div>
                             <a class="btn btn-primary" href="{{site.author.cv}}">Download my CV</a>
                         </div>
                     </div>

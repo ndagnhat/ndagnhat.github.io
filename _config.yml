@@ -1,27 +1,14 @@
+#site config
 title: "Nguyen Dang Nhat"
 subtitle: "My Portfolio"
 description: "My father is farmer"
 url: "https://ngdangnhat.github.io"
 
-#Twitter Cards
-share:
-  twitter_username: "ngdangnhat"
-
-#for page
-#title:
-#summary:
-#noindex:
-#permalink:
-#thumbnail:
-#categories:
-#tags
-
-
-# Edit Author details
-author:
-  photo: /assets/img/profile.jpg
-  name: Nguyen Dang Nhat
-  bio: Hi, my name is John Doe. I built this site using devlopr-jekyll :D
-  email: "dangnhatnguyen@outlook.com"
-  phone: "(+84) 946 220495"
-  cv: "/assets/cv/NguyenDangNhat.pdf"
+#page config tempate
+# title:
+# summary:
+# noindex:
+# permalink:
+# thumbnail:
+# categories:
+# tags
