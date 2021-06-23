@@ -1,8 +1,8 @@
 #site config
-title: "Nguyen Dang Nhat"
-subtitle: "My Portfolio"
-description: "My father is farmer"
-url: "https://ngdangnhat.github.io"
+title: Nguyen Dang Nhat
+subtitle: My Portfolio
+description: My father is farmer
+url: https://ngdangnhat.github.io
 
 #page config tempate
 # title:
@@ -37,15 +37,15 @@ memuitems:
 aboutme:
   photo: /assets/img/profile.jpg
   name: Nguyen Dang Nhat
-  email: "dangnhatnguyen@outlook.com"
-  phone: "(+84) 946 220495"
-  cv: "/assets/cv/NguyenDangNhat.pdf"
+  email: dangnhatnguyen@outlook.com
+  phone: (+84) 946 220495
+  cv: /assets/cv/NguyenDangNhat.pdf
   abouts: 
-    - I'm a Deveoper and Freelancer in Hanoi, Viet Nam
-    - Web developer with 4+ years of experience in Microsoft .NET technologies
-    - Mobile developer with 1+ years of experience in Flutter
+    - I'm a Deveoper and Freelancer in Hanoi, Viet Nam. 
+    - Web developer with 4+ years of experience in Microsoft .NET technologies. 
+    - Mobile developer with 1+ years of experience in Flutter. 
   skills: 
-    - "💪 ASP.Net, Sharepoint, Flutter"
+    - 💪 ASP.Net, Sharepoint, Flutter. 
 
 #product config
 products:
