@@ -25,7 +25,11 @@ thumbnail: "/assets/img/products/products.jpg"
                 <div class="text-center {% cycle 'text-sm-start', 'text-sm-end' %}">
                     <h4>{{product.name}}</h4>
                     <p style="font-size: 1.5rem;">{{product.description}}</p>
-                    <a href="{{product.url}}" class="color-a">Explore</a>
+                    {% if product.url %}
+                        <a href="{{product.url}}" class="color-a">Explore</a>
+                    {% else %}
+                        <a href="#" class="color-a">Coming Soon</a>
+                    {% endif %}
                 </div>
             </div>
         </div>

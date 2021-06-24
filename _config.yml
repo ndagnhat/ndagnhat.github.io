@@ -56,12 +56,12 @@ products:
     - name: Money Daily
       description: Experience a fresh way to manage money.
       photo: /assets/img/products/sp1.png
-      url: /products
+      #url: /products
       
     - name: Amem - Gospel and catholic calendar
       description: For Christian. Read Gospel daily.
       photo: /assets/img/products/sp2.png
-      url: /products
+      #url: /products
 
 #hire me config
 hireme:
