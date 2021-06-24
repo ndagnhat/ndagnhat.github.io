@@ -288,25 +288,12 @@ a:hover {
   color: #fff !important;
 }
 
-#logoText{
-  display: block;
-}
-#logoMobileText {
-  display: none;
-}
-
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
   }
   .navbar ul {
     display: none;
-  }
-  #logoText{
-    display: none;
-  }
-  #logoMobileText {
-    display: block;
   }
 }
 
