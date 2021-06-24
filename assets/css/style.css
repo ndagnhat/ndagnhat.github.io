@@ -288,10 +288,10 @@ a:hover {
   color: #fff !important;
 }
 
-#logoText {
+#logoText{
   display: block;
 }
-#appbarTitle {
+#logoMobileText {
   display: none;
 }
 
@@ -302,10 +302,10 @@ a:hover {
   .navbar ul {
     display: none;
   }
-  #logoText {
+  #logoText{
     display: none;
   }
-  #appbarTitle {
+  #logoMobileText {
     display: block;
   }
 }
