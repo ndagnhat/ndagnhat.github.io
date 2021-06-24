@@ -17,7 +17,7 @@
 {% if page.menu %}
 <script>
     $("#{{page.menu}}").addClass('active');
-    $("#logoMobileText").text("{{item.name}}");
-    $("#logoMobileText").prop("href", "{{item.url}}");
+    $("#logoMobileText").text($("#{{page.menu}}").text());
+    $("#logoMobileText").attr("href", $("#{{page.menu}}").attr("href"));
 </script>
 {% endif %}
