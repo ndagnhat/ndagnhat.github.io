@@ -73,42 +73,27 @@
 /*--------------------------------------------------------------
 # Header 
 --------------------------------------------------------------*/
-#header.header-no-scrolled {
+#header.header-hero {
   background: rgba(0, 0, 0, 0.0);
   border-bottom: none;
 }
 
-#header.header-hero-scrolled {
-  background: rgba(0, 0, 0, 0.8);
-  border-bottom: none;
-}
-
-#header.header-no-scrolled .logo a {
+#header.header-hero .logo a {
   display: none;
 }
 
-#header.header-hero-scrolled .logo a {
-  color: #fff;
-}
-
-@media (min-width: 992px) {
-  #header.header-hero-scrolled .logo a {
-    display: none;
-  }
-}
-
-#header.header-hero-scrolled .navbar > ul > li > a, #header.header-no-scrolled .navbar > ul > li > a {
+#header.header-hero .navbar > ul > li > a {
   color: #fff !important;
 }
 
-#header.header-hero-scrolled .navbar > ul > li > a:before, #header.header-no-scrolled .navbar > ul > li > a:before {
+#header.header-hero .navbar > ul > li > a:before {
   background-color: #fff !important;
 }
 
-#header.header-hero-scrolled .mobile-nav-toggle, #header.header-no-scrolled .mobile-nav-toggle {
+#header.header-hero .mobile-nav-toggle {
   color: #fff !important;
 }
 
-#header.header-hero-scrolled .navbar-mobile ul, #header.header-no-scrolled .navbar-mobile ul  {
+#header.header-hero .navbar-mobile ul {
   background-color: rgba(0, 0, 0, 0.9) !important;
 }

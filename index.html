@@ -5,7 +5,7 @@ layout: default
 #noindex:
 permalink: "/"
 thumbnail: "/assets/img/thumbnail.jpg"
-categories: 
+categories:
 #tags
 menu: "home"
 ---
@@ -59,7 +59,7 @@ menu: "home"
                         <ul>
                             {% if site.aboutme.abouts %} {% for about in site.aboutme.abouts %}
                             <li>{{ about }}</li>
-                            {% endfor %} {% endif %} 
+                            {% endfor %} {% endif %}
                         </ul>
                         <div>
                             <h5>Skill</h5>
@@ -67,7 +67,7 @@ menu: "home"
                         <ul>
                             {% if site.aboutme.skills %} {% for skill in site.aboutme.skills %}
                             <li>{{ skill }}</li>
-                            {% endfor %} {% endif %} 
+                            {% endfor %} {% endif %}
                         </ul>
                         <div>
                             <a class="btn btn-primary" href="{{site.aboutme.cv}}">Download my CV</a>
@@ -79,9 +79,9 @@ menu: "home"
         <!--Products-->
         <div class="position-relative mt-5">
             <a href="/products">
-<img src="{{site.products.thumbnail}}" alt="product thumbnail" class="rounded-3" width="100%" />
-           </a>
- <div class="position-absolute top-50 start-0 translate-middle-y ms-3 ms-sm-5 d-none d-lg-block"
+                <img src="{{site.products.thumbnail}}" alt="product thumbnail" class="rounded-3" width="100%" />
+            </a>
+            <div class="position-absolute top-50 start-0 translate-middle-y ms-3 ms-sm-5 d-none d-lg-block"
                 style="width: 100%;">
                 <div class="row">
                     <div class="col-sm-5">
@@ -100,9 +100,9 @@ menu: "home"
         <!--Hire me-->
         <div class="position-relative mt-5">
             <a href="/hireme">
-<img src="{{site.hireme.thumbnail}}" alt="hire me thumbnail" class="rounded-3" width="100%" />
+                <img src="{{site.hireme.thumbnail}}" alt="hire me thumbnail" class="rounded-3" width="100%" />
             </a>
-<div class="position-absolute top-50 start-0 translate-middle-y ms-3 ms-sm-5 d-none d-lg-block"
+            <div class="position-absolute top-50 start-0 translate-middle-y ms-3 ms-sm-5 d-none d-lg-block"
                 style="width: 100%;">
                 <div class="row">
                     <div class="col-sm-5">
@@ -121,9 +121,9 @@ menu: "home"
         <!--stories-->
         <div class="position-relative mt-5 mb-lg-5">
             <a href="/stories">
-<img src="{{site.stories.thumbnail}}" alt="stories thumbnail" class="rounded-3" width="100%" />
+                <img src="{{site.stories.thumbnail}}" alt="stories thumbnail" class="rounded-3" width="100%" />
             </a>
-<div class="position-absolute top-50 start-0 translate-middle-y ms-3 ms-sm-5 d-none d-lg-block"
+            <div class="position-absolute top-50 start-0 translate-middle-y ms-3 ms-sm-5 d-none d-lg-block"
                 style="width: 100%;">
                 <div class="row">
                     <div class="col-sm-5">
@@ -163,15 +163,10 @@ menu: "home"
     });
 
     function headerScrolled() {
-        if (window.scrollY > window.innerHeight - $("#header").outerHeight() - 1) {
-            $("#header").removeClass('header-hero-scrolled')
-            $("#header").removeClass('header-no-scrolled')
-        } else if (window.scrollY > 100) {
-            $("#header").addClass('header-hero-scrolled')
-            $("#header").removeClass('header-no-scrolled')
+        if (window.scrollY > window.innerHeight / 2) {
+            $("#header").removeClass('header-hero')
         } else {
-            $("#header").removeClass('header-hero-scrolled')
-            $("#header").addClass('header-no-scrolled')
+            $("#header").addClass('header-hero')
         }
     }
 </script>
