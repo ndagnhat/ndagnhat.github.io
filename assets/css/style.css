@@ -38,18 +38,6 @@ a:hover {
   color: #4e4e4e;
 }
 
-.module-large-tile {
-  padding: 1.25rem;
-  background-color: #fff;
-  z-index: 2;
-}
-
-@media (min-width: 768px) {
-  .module-large-tile {
-    padding: 3rem;
-  }
-}
-
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -300,12 +288,25 @@ a:hover {
   color: #fff !important;
 }
 
+#logoText {
+  display: block;
+}
+#appbarTitle {
+  display: none;
+}
+
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
   }
   .navbar ul {
     display: none;
+  }
+  #logoText {
+    display: none;
+  }
+  #appbarTitle {
+    display: block;
   }
 }
 

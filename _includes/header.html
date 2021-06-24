@@ -1,6 +1,9 @@
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-        <h1 class="logo"><a href="/">{{site.aboutme.name}}</a></h1>
+        <h1 class="logo">
+            <a id="logoText" href="/">{{site.aboutme.name}}</a>
+            <a id="appbarTitle"></a>
+        </h1>
         <nav id="navbar" class="navbar">
             <ul>
                 {% if site.memuitems %} {% for item in site.memuitems %}
@@ -14,5 +17,7 @@
 {% if page.menu %}
 <script>
     $("#{{page.menu}}").addClass('active');
+    $("#appbarTitle").text("{{item.name}}");
+    $("#appbarTitle").prop("href", "{{item.url}}");
 </script>
 {% endif %}
