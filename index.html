@@ -20,10 +20,7 @@ menu: "about"
             <div class="row align-items-center h-100">
                 <div class="text-center">
                     <p class="display-6 color-d">Hello, world!</p>
-                    <!-- <h1 class="hero-title mb-4">I am Nguyen Dang Nhat</h1> -->
-                    <p class="hero-subtitle">I'm <span class="typed"
-                            data-typed-items="Nguyen Dang Nhat, a Developer, a Freelancer, a Farmer"></span></p>
-                    <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+                    <p class="hero-subtitle">I'm <span class="typed" data-typed-items="Nguyen Dang Nhat, a Developer, a Freelancer, a Farmer"></span></p>
                 </div>
             </div>
         </div>
@@ -32,7 +29,7 @@ menu: "about"
 <section id="about">
     <div class="container">
         <!--About-->
-        <div class="p-3 p-sm-5">
+        <div class="p-3 p-sm-5 mt-5 rounded-3 bg-light">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="row">
@@ -134,12 +131,10 @@ menu: "about"
                 </div>
             </div>
         </div>
-        <div class="d-lg-none pt-2 mb-5">
-            <div class="text-center ">
-                <h4>{{site.stories.title}}</h4>
-                <p style="font-size: 1.2rem;">{{site.stories.description}}</p>
-                <a href="/stories" class="color-a">Explore my stories</a>
-            </div>
+        <div class="text-center d-lg-none pt-2 mb-5">
+            <h4>{{site.stories.title}}</h4>
+            <p style="font-size: 1.2rem;">{{site.stories.description}}</p>
+            <a href="/stories" class="color-a">Explore my stories</a>
         </div>
     </div>
 </section>
