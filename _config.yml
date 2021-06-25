@@ -51,7 +51,7 @@ aboutme:
 products:
   title: My Products
   description: Helpful products. For everyone.
-  thumbnail: /assets/img/products/products.jpg
+  thumbnail: /assets/img/products/products.png
   items: 
     - name: Money Daily
       description: Experience a fresh way to manage money.
