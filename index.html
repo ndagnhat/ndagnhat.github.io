@@ -76,17 +76,17 @@ menu: "about"
         <!--Products-->
         <div class="mt-5 rounded-3 bg-light">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-sm-last">
                     <h4>{{site.products.title}}</h4>
                     <p style="font-size: 1.5rem;">{{site.products.description}}</p>
                     <a href="/products" class="color-a">Explore all products</a>
                 </div>
-                <div class="col-lg-6">
-                    <img src="{{site.products.thumbnail}}" alt="products" class="rounded-3" width="100%" />
+                <div class="col-lg-6 order-sm-first">
+                    <img src="{{site.products.thumbnail}}" alt="products" width="100%" />
                 </div>
             </div>
         </div>
-        
+
         <div class="position-relative mt-5">
             <a href="/products">
                 <img src="{{site.products.thumbnail}}" alt="products" class="rounded-3" width="100%" />
