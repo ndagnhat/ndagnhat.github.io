@@ -78,9 +78,9 @@
   border-bottom: none;
 }
 
-/* #header.header-hero .logo a {
+#header.header-hero .logo a {
   display: none;
-} */
+}
 
 #header.header-hero .navbar > ul > li > a {
   color: #fff !important;
