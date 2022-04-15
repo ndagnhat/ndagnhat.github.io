@@ -142,8 +142,10 @@ menu: "about"
     function headerScrolled() {
         if (window.scrollY >= (window.innerHeight - 64)) {
             $("#header").removeClass('header-hero');
+            $("head").append('<meta name="theme-color" content="#EF4444" />');
         } else {
             $("#header").addClass('header-hero');
+            $("head meta[name='theme-color']").remove();
         }
     }
 </script>
