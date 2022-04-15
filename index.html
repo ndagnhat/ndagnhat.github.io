@@ -113,7 +113,7 @@ menu: "about"
                 </div>
             </div>
         </div>
-        <div class="text-center d-lg-none pt-2 mb-5">
+        <div class="text-center d-lg-none pt-2 pb-5">
             <h4>{{site.hireme.title}}</h4>
             <p style="font-size: 1.2rem;">{{site.hireme.description}}</p>
             <a href="/hireme" class="color-a">Get in Touch</a>
@@ -141,9 +141,11 @@ menu: "about"
 
     function headerScrolled() {
         if (window.scrollY > window.innerHeight / 2) {
-            $("#header").removeClass('header-hero')
+            $("#header").removeClass('header-hero');
+            $("body").css("background-color", "#fff");
         } else {
-            $("#header").addClass('header-hero')
+            $("#header").addClass('header-hero');
+            $("body").css("background-color", "#222");
         }
     }
 </script>
