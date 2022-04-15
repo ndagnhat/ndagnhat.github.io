@@ -1,8 +1,11 @@
 #site config
 title: Nguyen Dang Nhat
-subtitle: My Portfolio
-description: My father is farmer
+subtitle: My Profile
+description: My Profile
 url: https://ngdangnhat.github.io
+heroimg: assets/img/hero-bg.jpg
+herotitle: Hello, world!
+herosubtitle: Nguyen Dang Nhat, a Developer, a Freelancer
 
 #page config tempate
 # title:
@@ -37,8 +40,8 @@ memuitems:
 aboutme:
   photo: /assets/img/profile.jpg
   name: Nguyen Dang Nhat
-  email: dangnhatnguyen@outlook.com
-  phone: (+84)346761576
+  email: nhatnd9504@gmail.com
+  phone: (+84)34 676 1576
   cv: /assets/cv/NguyenDangNhat1.pdf
   abouts: 
     - I'm a Deveoper and Freelancer in Hanoi, Viet Nam. 
