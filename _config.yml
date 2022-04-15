@@ -67,7 +67,7 @@ products:
 hireme:
   title: Hire me!
   description: I'm Available For Freelance Work.
-  thumbnail: /assets/img/here_me/here_me.png
+  thumbnail: /assets/img/stories/stories.jpg
 
 #store config
 stories:
