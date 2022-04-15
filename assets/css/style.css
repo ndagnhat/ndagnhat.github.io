@@ -1,5 +1,4 @@
 body {
-  background-color: #fff;
   color: #4e4e4e;
 }
 
@@ -382,6 +381,7 @@ a:hover {
 # Main
 --------------------------------------------------------------*/
 #main {
+  background: #fff;
   min-height: calc(100vh - 75px);
 }
 
