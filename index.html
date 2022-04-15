@@ -140,7 +140,7 @@ menu: "about"
     });
 
     function headerScrolled() {
-        if (window.scrollY >= window.innerHeight) {
+        if (window.scrollY >= (window.innerHeight - 80)) {
             $("#header").removeClass('header-hero');
         } else {
             $("#header").addClass('header-hero');
