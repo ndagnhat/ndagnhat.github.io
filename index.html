@@ -140,12 +140,10 @@ menu: "about"
     });
 
     function headerScrolled() {
-        if (window.scrollY > window.innerHeight / 2) {
+        if (window.scrollY >= window.innerHeight) {
             $("#header").removeClass('header-hero');
-            $("body").css("background-color", "#fff");
         } else {
             $("#header").addClass('header-hero');
-            $("body").css("background-color", "#222");
         }
     }
 </script>
