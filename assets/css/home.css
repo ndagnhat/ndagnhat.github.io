@@ -82,11 +82,11 @@
   display: none;
 }
 
-#header.header-hero .navbar > div > ul > li > a {
+#header.header-hero .navbar > ul > li > a {
   color: #fff !important;
 }
 
-#header.header-hero .navbar > div > ul > li > a:before {
+#header.header-hero .navbar > ul > li > a:before {
   background-color: #fff !important;
 }
 
