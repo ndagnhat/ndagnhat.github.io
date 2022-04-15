@@ -14,13 +14,13 @@ menu: "about"
 <script>
     $("#header").addClass('header-no-scrolled')
 </script>
-<div id="hero" class="hero bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
+<div id="hero" class="hero bg-image" style="background-image: url({{site.heroimg}})">
     <div class="overlay-itro">
         <div class="container h-100">
             <div class="row align-items-center h-100">
                 <div class="text-center">
-                    <p class="display-6 color-d">Hello, world!</p>
-                    <p class="hero-subtitle">I'm <span class="typed" data-typed-items="Nguyen Dang Nhat, a Developer, a Freelancer, a Farmer"></span></p>
+                    <p class="display-6 color-d">{{site.herotitle}}</p>
+                    <p class="hero-subtitle">I'm <span class="typed" data-typed-items="{{site.herosubtitle}}"></span></p>
                 </div>
             </div>
         </div>
