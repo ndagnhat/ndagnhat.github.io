@@ -149,5 +149,10 @@ menu: "about"
                 $("head").append('<meta name="theme-color" content="#111" />');
             }
         }
+        if (window.scrollY >= 50) {
+            $("body").css('background-color', '#111');
+        } else {
+            $("body").css('background-color', '');
+        }
     }
 </script>
