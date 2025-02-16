@@ -5,7 +5,7 @@ description: My Profile
 url: https://ndagnhat.github.io
 heroimg: assets/img/hero-bg.jpg
 herotitle: Hello, world!
-herosubtitle: I'm Nguyen Dang Nhat, I'm a Developer, I'm a Freelancer
+herosubtitle: I'm Nguyen Dang Nhat, I'm DevOps Engineer, I'm a Developer, I'm a Freelancer
 
 #page config tempate
 # title:
@@ -40,13 +40,13 @@ memuitems:
 aboutme:
   photo: /assets/img/profile.jpg
   name: Nguyen Dang Nhat
-  email: nhatnd9504@gmail.com
+  email: nguyen.dangnhat@icloud.com
   phone: (+84)34 676 1576
   cv: /assets/cv/NguyenDangNhat1.pdf
   abouts: 
     - I'm a Deveoper and Freelancer in Hanoi, Viet Nam. 
-    - Web developer with 4+ years of experience in Microsoft .NET technologies. 
-    - Mobile developer with 1+ years of experience in Flutter. 
+    - Web developer with experience in Microsoft .NET technologies. 
+    - Mobile developer with experience in Flutter. 
   skills: 
     - 💪 ASP.Net, Sharepoint, Flutter. 
 
